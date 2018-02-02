@@ -35,8 +35,6 @@ function sum(num,num2){ //eslint-disable-line
 testSum();
 
 
-
-
 /////////////////////////////////////
 /* Problem 2
 Write a function called multiply() that takes in two numbers 
@@ -50,11 +48,12 @@ were input into the function:
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-
+    const product = a * b;
+    return [product, 'The product of ' + a + ' and ' + b + ' is ' + product + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply();
+testMultiply();
 
 
 /////////////////////////////////////
@@ -82,7 +81,7 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
