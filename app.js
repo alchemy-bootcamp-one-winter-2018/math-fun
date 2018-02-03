@@ -30,8 +30,9 @@ the values that were input into the function:
 */
 
 // Write your code here
-function sum(){ //eslint-disable-line
-
+function sum(num1, num2){
+    const answer = num1 + num2;
+    return [answer, 'The sum of ' + num1 + ' and '  + num2 + ' is ' + answer + '.'];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -56,7 +57,8 @@ were input into the function:
 */
 
 // Write your code here
-function multiply(a,b){ //eslint-disable-line
+function multiply(a,b){
+    
 
 }
 
