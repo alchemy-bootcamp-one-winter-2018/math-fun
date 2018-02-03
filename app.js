@@ -28,13 +28,12 @@ the values that were input into the function:
 // Write your code here
 function sum(num,num2){ //eslint-disable-line
     const numSum = num + num2;
-    return [numSum, 'The sum of ' + num + ' and ' + num2 + ' is ' + numSum + '.'];
+    return [numSum, 'The sum of ' + num + ' and ' + num2 + ' is ' + numSum + '.']
 }
 
 // Here is the test for sum(); uncomment it to run it
-testSum();
-
-
+testSum(4,7);
+console.log (sum (2,5));
 
 
 /////////////////////////////////////
@@ -50,12 +49,16 @@ were input into the function:
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-
+    const multiplication = (a * b);
+    return [multiplication, 'The product of ' + a + ' and ' + b + ' is ' + multiplication + '.']
 }
+  
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply();
+    testMultiply(5,9);
+    console.log(multiply(5,9));
 
+//shows on page 'test fails'
 
 /////////////////////////////////////
 /* Problem 3
@@ -81,13 +84,20 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+function sumAndMultiply(num,num2,num3){ //eslint-disable-line
+    const additions = sum(num,num2)[0];
+    const total = sum(additions,num3)[0];
+    const pete = multiply(num,num2)[0];
+    const step4 = multiply(num3,pete)[0];
+    console.log('b' + additions);
+        return [total,step4,'4 and 7 and 5 sum to 16. The product of 4 and 7 and 5 is 140.']
+        
 }
-
+        console.log(sumAndMultiply(4,7,5));
+    
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
-
+    testSumAndMultiply(4,7,5);
+    
 
 /////////////////////////////////////
 /* Problem 4
