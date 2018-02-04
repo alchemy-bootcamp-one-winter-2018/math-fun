@@ -30,8 +30,9 @@ the values that were input into the function:
 */
 
 // Write your code here
-function sum(){ //eslint-disable-line
-
+function sum(num1, num2){ //eslint-disable-line
+    const numSum = num1 + num2;
+    return [numSum, "The sum of " + num1 + " and " + num2 + " is " + numSum + "."]
 }
 
 // Here is the test for sum(); uncomment it to run it
