@@ -25,7 +25,11 @@ the values that were input into the function:
 "The sum of 4 and 7 is 11."
 */
 
-// Write your code here
+// Write your code here                tried the const testSum to stop the error=no help
+//const testSum;
+//if (testSum === void 0) {
+   // these statements execute
+//}
 function sum(num,num2){ //eslint-disable-line
     const numSum = num + num2;
     return [numSum, 'The sum of ' + num + ' and ' + num2 + ' is ' + numSum + '.'];
@@ -48,17 +52,21 @@ were input into the function:
 */
 
 // Write your code here
-function multiply(a,b){ //eslint-disable-line
-    const num3 = (a * b);
-    return [num3, 'The product of ' + a + ' and ' + b + ' is ' + num3 + '.'];
+//var testMultiply;
+//if (testMultiply === void 0) {
+   // these statements execute
+   //const multiply;
+   //if (multiply === void 0) {
+      // these statements execute
+   //}
+
+function multiply(){ //eslint-disable-line
+    
 }
-  
-
 // Here is the test for multiply(); uncomment it to run it
-    testMultiply(5,9);
-    console.log(multiply(5,9));
+   
 
-//shows on page 'test fails'
+
 
 /////////////////////////////////////
 /* Problem 3
@@ -84,17 +92,8 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-//let testSumAndMultiply = (4,7,5);   kills all above funcitons  OMG!!
-function sumAndMultiply(num,num2,num3){ //eslint-disable-line
-    const additions = (num,num2)[0];
-    const total = (additions,num3)[0];
-    const additions2 = (num,num2)[0];
-    const total2 = (num3,additions2);
-    console.log('b' + additions);
-        return [total, total2,'4 and 7 and 5 sum to 16.The product of 4 and 7 and 5 is 140.'];       
-}
-    testSumAndMultiply(4,7,5);  // this is a undefined variable - just can't find way to fix it 
-    console.log(sumAndMultiply(4,7,5));
+   function sumAndMultiply(){ //eslint-disable-line
+        
     
 // Here is the test for sumAndMultiply(); uncomment it to run it
     
@@ -121,9 +120,8 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 // Write your code here
 
-function sumArray(testArray){ //eslint-disable-line
 
-}
+
 
 // Here is the test for sumArray(); uncomment it to run it
 // testSumArray();
@@ -156,14 +154,9 @@ new branch for your work on the next question!
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
 
+
+
+
 }
-function multiplyArray(da2,da3,da4){ //eslint-disable-l
-    const combine234 = (da2 + da3 + da4);
-    
-    return [da2,da3,da4,' was passed in as an array of numbers and ', combine234, ' is their sum.'];
-   
-  }
-  testMultiplyArray(2,3,4);
-  console.log(multiplyArray(2,3,4));
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+ MultiplyArray();
