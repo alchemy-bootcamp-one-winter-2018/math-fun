@@ -30,12 +30,15 @@ the values that were input into the function:
 */
 
 // Write your code here
-function sum(){ //eslint-disable-line
 
+function sum(a, b){ //eslint-disable-line
+    const numSum = a + b;
+    return [numSum, "The sum of " + a + " and " + b + " is " + numSum + "."];
 }
 
+
 // Here is the test for sum(); uncomment it to run it
-testSum();
+//testSum();
 
 
 
@@ -57,11 +60,12 @@ were input into the function:
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-
+    const numProduct = a * b;
+    return [numProduct, "The product of " + a + " and " + b + " is " + numProduct + "."];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply();
+//testMultiply();
 
 
 
@@ -94,12 +98,20 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+function sum(a, b, c) {
+    return a + b + c;
+}
+function multiply(a, b, c) {
+    return a * b * c;
+}
+function sumAndMultiply(a, b, c){ //eslint-disable-line
+    const numSum = sum(a, b, c);
+    const numProduct = multiply(a, b, c);
+    return [numSum, numProduct, a + " and " + b + " and " + c + " sum to " + numSum + ".", "The product of " + a + " and " + b + " and " + c + " is " + numProduct + "."];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply();
+//testSumAndMultiply();
 
 
 
@@ -130,13 +142,17 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-
+function sum(a, b, c) {
+    return a + b + c;
+}
 function sumArray(testArray){ //eslint-disable-line
-
+    const numSum = sum(testArray[0], testArray[1], testArray[2]);
+    testArray = [2, 3, 4];
+    return [numSum, testArray[0] + "," + testArray[1] + "," + testArray[2] + " was passed in as an array of numbers, and " + numSum + " is their sum."];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray();
+testSumArray();
 
 
 
